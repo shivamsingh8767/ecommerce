@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f3ee" />
+  <meta name="description" content="Contemporary essentials for the modern individual. Clothing, footwear, watches and accessories, considered in detail." />
+  <meta name="robots" content="index,follow" />
+  <title>STILL — Contemporary Essentials</title>
+  <link rel="icon" type="image/svg+xml" href="still-favicon.svg" />
+  <!-- Replace the example-domain URLs with STILL's live domain before publishing. -->
+  <link rel="canonical" href="https://your-domain.example/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="STILL" />
+  <meta property="og:title" content="STILL — Contemporary Essentials" />
+  <meta property="og:description" content="Contemporary essentials for the modern individual. Clothing, footwear, watches and accessories, considered in detail." />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="https://your-domain.example/still-featured-aw26.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="STILL — Contemporary Essentials" />
+  <meta name="twitter:description" content="Contemporary essentials for the modern individual. Clothing, footwear, watches and accessories, considered in detail." />
+  <meta name="twitter:image" content="https://your-domain.example/still-featured-aw26.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f5f3ee;
+      --ink: #24231f;
+      --muted: #77756d;
+      --line: #dedbd3;
+      --olive: #777c5a;
+      --olive-dark: #555c3e;
+      --card: #ebe9e2;
+      --serif: "Cormorant Garamond", serif;
+      --sans: "Manrope", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 14px; -webkit-font-smoothing: antialiased; }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    a { color: inherit; text-decoration: none; }
+    .site-header { background:var(--paper); position:relative; z-index:5; }
+    .header-main { height:78px; display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:clamp(22px,4vw,62px); padding:0 clamp(24px,5.2vw,82px); border-bottom:1px solid var(--line); }
+    .header-left,.header-actions { display:flex; align-items:center; }
+    .header-left { gap:16px; }
+    .header-actions { justify-content:flex-end; gap:clamp(16px,2vw,29px); }
+    .wordmark { font-family:var(--sans); font-size:34px; letter-spacing:.11em; font-weight:500; line-height:1; }
+    .wordmark small { font-family:var(--sans); display:block; font-size:8px; text-align:center; letter-spacing:.31em; margin-top:7px; text-transform:uppercase; }
+    .header-wordmark { font-family:var(--sans); font-size:22px; letter-spacing:.28em; font-weight:500; }
+    .icon-btn { border:0; padding:4px; background:transparent; cursor:pointer; display:inline-flex; align-items:center; justify-content:center; position:relative; color:var(--ink); transition:opacity .2s; }
+    .icon-btn:hover { opacity:.58; }
+    .icon-btn svg { width:20px; height:20px; stroke:currentColor; stroke-width:1.5; fill:none; }
+    .header-utility { gap:8px; padding:7px 0; white-space:nowrap; font-size:9px; letter-spacing:.13em; text-transform:uppercase; }
+    .header-utility svg { width:17px; height:17px; }
+    .cart-count { background:var(--paper); color:var(--ink); font-size:8px; min-width:12px; height:12px; border-radius:50%; position:absolute; top:0; right:-9px; display:grid; place-items:center; }
+    .nav { min-height:0; display:flex; justify-content:center; align-items:center; gap:clamp(13px,1.75vw,27px); border:0; }
+    .nav a { font-size:9px; letter-spacing:.15em; text-transform:uppercase; color:#3e3d38; transition:opacity .2s; white-space:nowrap; }
+    .nav a:hover { opacity:.55; }
+    .mobile-menu { display:none; }
+    .hero { height:min(66.6667vw,1280px); min-height:0; max-height:1280px; margin:0; position:relative; overflow:hidden; display:flex; align-items:center; background:#eeeae3; }
+    .hero-image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 49%; }
+    .hero:after { content:none; }
+    .hero-copy { position:relative; z-index:1; color:#282722; margin-left:clamp(28px,8.2vw,132px); max-width:460px; padding:45px 0; }
+    .hero h1 { font-family:var(--serif); font-size:clamp(64px,7.6vw,112px); font-weight:500; line-height:.91; letter-spacing:.005em; margin:0 0 23px; }
+    .hero-copy p { max-width:300px; line-height:1.75; font-size:13px; letter-spacing:.015em; color:#66645d; margin:0 0 29px; }
+    .hero-cta { display:inline-flex; align-items:center; gap:13px; padding:0 0 9px; border-bottom:1px solid #33322e; color:#282722; font-size:9px; letter-spacing:.16em; text-transform:uppercase; transition:opacity .2s; }
+    .hero-cta:hover { opacity:.58; }
+    .hero-cta svg { width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:1.4; }
+    .button { height:46px; min-width:147px; padding:0 21px; display:inline-flex; justify-content:center; align-items:center; gap:13px; border:1px solid transparent; background:var(--olive-dark); color:#fff; font-size:10px; letter-spacing:.13em; text-transform:uppercase; cursor:pointer; transition:background .2s, color .2s, border .2s, transform .2s; }
+    .button:hover { background:#414632; transform:translateY(-1px); }
+    .button svg { width:15px; height:15px; stroke:currentColor; stroke-width:1.5; fill:none; }
+    .hero .button { background:#f5f3ee; color:#282821; }
+    .hero .button:hover { background:#dedbd3; }
+    .hero-note { display:none; }
+    .benefits { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid var(--line); margin:0 4.2%; }
+    .benefit { padding:25px 16px; text-align:center; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:#56544d; }
+    .benefit + .benefit { border-left:1px solid var(--line); }
+    .benefit strong { font-weight:500; }
+    .benefit span { color:var(--muted); letter-spacing:.04em; text-transform:none; margin-left:5px; }
+    .section { padding:72px 8.2% 78px; }
+    .section-heading { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:28px; }
+    .section-kicker { font-size:9px; text-transform:uppercase; letter-spacing:.19em; color:var(--olive-dark); }
+    .section-title { font:500 34px/1.1 var(--serif); letter-spacing:-.01em; margin:9px 0 0; }
+    .text-link { font-size:10px; letter-spacing:.1em; text-transform:uppercase; border-bottom:1px solid #8f8c82; padding:0 0 6px; transition:color .2s; }
+    .text-link:hover { color:var(--olive); }
+    .category-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:15px; }
+    .category-card { height:220px; position:relative; overflow:hidden; background:var(--card); cursor:pointer; }
+    .category-card img { width:100%; height:100%; object-fit:cover; transition:transform .6s cubic-bezier(.2,.65,.25,1); }
+    .category-card:hover img { transform:scale(1.045); }
+    .category-card:after { content:""; position:absolute; inset:42% 0 0; background:linear-gradient(transparent,rgba(26,25,21,.55)); }
+    .category-card span { position:absolute; z-index:1; left:17px; bottom:16px; color:#fff; font:500 22px var(--sans); }
+    .fashion-category-section { padding:82px 7.5% 86px; background:var(--paper); }
+    .fashion-category-heading { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:31px; }
+    .fashion-category-heading h2 { margin:0; color:var(--ink); font:500 clamp(38px,4vw,52px)/.98 var(--serif); letter-spacing:.005em; }
+    .fashion-category-heading p { margin:11px 0 0; color:var(--muted); font:400 12px/1.6 var(--sans); letter-spacing:.025em; }
+    .fashion-category-grid { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); grid-template-rows:clamp(360px,32vw,470px) clamp(250px,22vw,310px); gap:17px; }
+    .fashion-category-card { min-width:0; min-height:0; display:grid; grid-template-rows:minmax(0,1fr) auto; overflow:hidden; color:var(--ink); text-decoration:none; border-radius:2px; }
+    .fashion-category-card--clothing { grid-column:1 / span 7; grid-row:1; }
+    .fashion-category-card--footwear { grid-column:8 / span 5; grid-row:1; }
+    .fashion-category-card--watches { grid-column:1 / span 4; grid-row:2; }
+    .fashion-category-card--headwear { grid-column:5 / span 4; grid-row:2; }
+    .fashion-category-card--accessories { grid-column:9 / span 4; grid-row:2; }
+    .fashion-category-media { min-height:0; position:relative; overflow:hidden; background:#e7e4de; }
+    .fashion-category-media img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; transition:transform .52s cubic-bezier(.2,.65,.25,1); }
+    .fashion-category-card--clothing .fashion-category-media img { object-position:60% center; }
+    .fashion-category-card--watches .fashion-category-media img { object-position:48% center; }
+    .fashion-category-card:hover .fashion-category-media img,
+    .fashion-category-card:focus-visible .fashion-category-media img { transform:scale(1.035); }
+    .fashion-category-card:focus-visible { outline:1px solid var(--ink); outline-offset:4px; }
+    .fashion-category-caption { min-height:55px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:13px 1px 3px; border-bottom:1px solid var(--line); }
+    .fashion-category-caption h3 { margin:0; color:var(--ink); font:500 10px/1.3 var(--sans); letter-spacing:.14em; }
+    .fashion-category-caption span { display:inline-flex; align-items:center; gap:8px; color:#77756d; font:400 9px/1 var(--sans); letter-spacing:.08em; text-transform:uppercase; transition:color .2s; }
+    .fashion-category-caption b { color:var(--ink); font-size:13px; font-weight:400; transition:transform .2s; }
+    .fashion-category-card:hover .fashion-category-caption span { color:var(--ink); }
+    .fashion-category-card:hover .fashion-category-caption b { transform:translateX(3px); }
+    .collection { background:#eeece6; padding-top:72px; padding-bottom:78px; }
+    .collection .section-heading { align-items:center; margin-bottom:22px; }
+    .filters { display:flex; gap:7px; margin-bottom:15px; flex-wrap:wrap; }
+    .filter-chip { border:1px solid #d5d2ca; background:transparent; border-radius:30px; padding:9px 15px; font-size:10px; color:#67655d; cursor:pointer; transition:all .2s; }
+    .filter-chip:hover,.filter-chip.active { background:#5d6347; border-color:#5d6347; color:white; }
+    .product-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:28px 15px; }
+    .product-card { min-width:0; }
+    .product-image { aspect-ratio: .82; background:#e1dfd8; position:relative; overflow:hidden; }
+    .product-image img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .55s cubic-bezier(.2,.65,.25,1); }
+    .product-card:hover .product-image img { transform:scale(1.035); }
+    .product-tag { position:absolute; top:12px; left:12px; padding:6px 9px; background:rgba(245,243,238,.94); font-size:8px; text-transform:uppercase; letter-spacing:.12em; }
+    .heart { width:32px; height:32px; position:absolute; top:9px; right:9px; background:rgba(245,243,238,.9); border:0; border-radius:50%; display:grid; place-items:center; cursor:pointer; transition:transform .2s, background .2s; }
+    .heart:hover { transform:scale(1.08); }
+    .heart svg { width:16px; height:16px; stroke:#4f5047; stroke-width:1.5; fill:none; }
+    .heart.saved svg { fill:#a76150; stroke:#a76150; }
+    .quick-add { position:absolute; left:10px; right:10px; bottom:10px; border:0; height:39px; background:rgba(245,243,238,.96); font-size:9px; text-transform:uppercase; letter-spacing:.13em; cursor:pointer; transform:translateY(58px); opacity:0; transition:transform .24s, opacity .24s, background .2s; }
+    .product-card:hover .quick-add,.quick-add:focus-visible { transform:translateY(0); opacity:1; }
+    .quick-add:hover { background:white; }
+    .product-meta { display:flex; justify-content:space-between; gap:10px; align-items:baseline; padding-top:12px; }
+    .product-name { font-family:var(--sans); font-size:17px; font-weight:500; }
+    .product-price { white-space:nowrap; font-family:var(--sans); font-size:11px; font-weight:400; color:#56544d; }
+    .product-sub { font-size:10px; color:#858279; margin-top:4px; line-height:1.45; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; min-height:29px; }
+    .catalog-toolbar a { color:var(--olive-dark); text-decoration:underline; text-underline-offset:3px; }
+    .stars { color:#a08053; letter-spacing:1px; font-size:9px; margin-right:5px; }
+    .rating { margin-top:8px; color:#77756d; font-size:9px; }
+    .empty-state { display:none; padding:48px; color:var(--muted); text-align:center; grid-column:1/-1; }
+    .catalog-toolbar { display:flex; justify-content:space-between; align-items:center; gap:16px; min-height:36px; margin-bottom:18px; color:#77756d; font-size:10px; }
+    .catalog-note { line-height:1.5; }
+    .catalog-tools { display:flex; align-items:center; gap:14px; white-space:nowrap; }
+    .catalog-tools select { appearance:none; border:0; border-bottom:1px solid #aaa79e; color:#514f49; background:transparent; padding:7px 18px 7px 4px; font:inherit; cursor:pointer; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='m2 3 3 3 3-3' fill='none' stroke='%23514f49'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right center; }
+    .catalog-loading { grid-column:1/-1; min-height:160px; display:grid; place-items:center; color:var(--muted); font-size:11px; }
+    .catalog-loading:before { content:""; width:24px; height:24px; border:1px solid #d4d1c8; border-top-color:var(--olive); border-radius:50%; animation:spin .8s linear infinite; margin-bottom:8px; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .product-unavailable { position:absolute; inset:0; background:#f5f3ee91; display:grid; place-items:center; font-size:9px; text-transform:uppercase; letter-spacing:.14em; }
+    .latest-edit { background:#eeece6; padding-top:78px; padding-bottom:84px; }
+    .latest-edit .latest-heading { align-items:flex-end; margin-bottom:30px; }
+    .latest-heading .section-title { margin:0; font-size:clamp(40px,4.2vw,54px); line-height:.98; }
+    .latest-support { margin:12px 0 0; color:var(--muted); font:400 12px/1.6 var(--sans); letter-spacing:.02em; }
+    .latest-product-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:30px 16px; }
+    .latest-product-card { min-width:0; }
+    .latest-product-image { aspect-ratio:1 / 1; background:#e4e1da; }
+    .latest-product-image img { transition:transform .46s cubic-bezier(.2,.65,.25,1); }
+    .latest-product-card:hover .latest-product-image img,
+    .latest-product-card:focus-within .latest-product-image img { transform:scale(1.035); }
+    .latest-product-info { padding-top:13px; }
+    .latest-product-name { display:block; min-height:27px; font:500 10px/1.4 var(--sans); letter-spacing:.11em; text-transform:uppercase; }
+    .latest-product-category { display:block; margin-top:2px; color:#858279; font:400 10px/1.45 var(--sans); }
+    .latest-product-purchase { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:11px; }
+    .latest-product-price { color:#56544d; font:400 11px/1.3 var(--sans); white-space:nowrap; }
+    .latest-add { border:0; border-bottom:1px solid #aaa79e; background:transparent; padding:0 0 4px; color:var(--ink); font:500 8px/1.2 var(--sans); letter-spacing:.12em; white-space:nowrap; cursor:pointer; transition:opacity .2s,border-color .2s; }
+    .latest-add:hover,.latest-add:focus-visible { opacity:.58; border-color:var(--ink); }
+    .latest-add:focus-visible { outline:1px solid var(--ink); outline-offset:4px; }
+    .latest-empty { grid-column:1/-1; padding:44px 10px; color:var(--muted); text-align:center; font:400 12px/1.6 var(--sans); }
+    .campaign-eyebrow { margin:0 0 18px; color:#77756d; font:500 9px/1.4 var(--sans); letter-spacing:.2em; text-transform:uppercase; }
+    .campaign-title { margin:0; font:500 clamp(48px,6vw,82px)/.91 var(--serif); letter-spacing:.005em; text-transform:uppercase; }
+    .campaign-description { max-width:340px; margin:21px 0 27px; color:#68665e; font:400 12px/1.8 var(--sans); letter-spacing:.015em; }
+    .campaign-cta { display:inline-flex; align-items:center; gap:12px; padding:0 0 7px; border-bottom:1px solid currentColor; color:inherit; font:500 9px/1.4 var(--sans); letter-spacing:.14em; text-transform:uppercase; transition:opacity .22s; }
+    .campaign-cta:hover { opacity:.58; }
+    .campaign-cta span { font-size:14px; line-height:1; transition:transform .22s; }
+    .campaign-cta:hover span { transform:translateX(3px); }
+    .featured-collection { height:clamp(560px,58vw,820px); min-height:560px; position:relative; display:flex; align-items:center; overflow:hidden; background:#e7e3dc; }
+    .featured-collection__media { position:absolute; inset:0; overflow:hidden; }
+    .featured-collection__image { display:block; width:100%; height:100%; object-fit:cover; object-position:center 52%; transform:scale(1.04); will-change:transform; }
+    .featured-collection__copy { position:relative; z-index:1; width:min(435px,40vw); margin-left:clamp(28px,8.2vw,132px); padding:48px 0; color:#24231f; }
+    .featured-collection .campaign-title { font-size:clamp(64px,7.4vw,104px); }
+    .featured-collection .campaign-description { max-width:320px; }
+    .watch-editorial { display:grid; grid-template-columns:minmax(330px,.9fr) minmax(0,1.1fr); min-height:620px; background:#222220; color:#f5f3ee; }
+    .watch-editorial__copy { align-self:center; padding:76px clamp(38px,8.7vw,136px); }
+    .watch-editorial .campaign-eyebrow { color:#b7b4aa; }
+    .watch-editorial .campaign-title { font-size:clamp(52px,5.5vw,76px); }
+    .watch-editorial .campaign-description { color:#c7c4bc; }
+    .watch-editorial .campaign-cta { color:#f5f3ee; }
+    .watch-editorial__media { min-width:0; min-height:620px; overflow:hidden; background:#191918; }
+    .watch-editorial__image { display:block; width:100%; height:100%; object-fit:cover; object-position:center; transition:transform .7s cubic-bezier(.2,.65,.25,1); }
+    .watch-editorial__media:hover .watch-editorial__image { transform:scale(1.025); }
+    .footwear-editorial { display:grid; grid-template-columns:minmax(0,1.18fr) minmax(360px,.82fr); min-height:550px; background:#eeece6; }
+    .footwear-editorial__media { min-width:0; min-height:550px; overflow:hidden; background:#e4e1da; }
+    .footwear-editorial__image { display:block; width:100%; height:100%; object-fit:cover; object-position:center 55%; transition:transform .65s cubic-bezier(.2,.65,.25,1); }
+    .footwear-editorial__media:hover .footwear-editorial__image { transform:scale(1.025); }
+    .footwear-editorial__copy { align-self:center; padding:74px clamp(34px,6vw,94px); }
+    .footwear-editorial .campaign-title { font-size:clamp(50px,5.8vw,78px); }
+    .brand-story-editorial { display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); align-items:center; gap:clamp(48px,9vw,140px); padding:108px 8.2%; background:var(--paper); }
+    .brand-story-editorial__copy { max-width:430px; }
+    .brand-story-editorial .campaign-title { font-size:clamp(52px,5.6vw,78px); line-height:.94; }
+    .brand-story-editorial .campaign-title span { display:block; }
+    .brand-story-editorial .campaign-description { max-width:400px; margin-top:24px; }
+    .brand-story-editorial .campaign-description p { margin:0 0 13px; }
+    .brand-story-editorial__media { height:clamp(440px,50vw,650px); min-height:440px; overflow:hidden; background:#e3e0d9; }
+    .brand-story-editorial__image { display:block; width:100%; height:100%; object-fit:cover; object-position:58% center; transition:transform .6s cubic-bezier(.2,.65,.25,1); }
+    .brand-story-editorial__media:hover .brand-story-editorial__image { transform:scale(1.02); }
+    .story { display:grid; grid-template-columns:1.05fr .95fr; min-height:430px; }
+    .story-image { min-height:390px; background:#dedbd2; }
+    .story-image img { width:100%; height:100%; object-fit:cover; display:block; }
+    .story-copy { display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:60px 12%; background:#e6e4dc; }
+    .story-copy h2 { font:500 39px/1.1 var(--serif); margin:13px 0 14px; max-width:370px; }
+    .story-copy p { color:#706e65; line-height:1.85; font-size:12px; max-width:350px; margin:0 0 25px; }
+    .journal-section { padding:96px 8.2% 102px; background:var(--paper); }
+    .journal-heading { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:31px; }
+    .journal-heading h2 { margin:0; font:500 clamp(42px,5vw,60px)/.95 var(--serif); text-transform:uppercase; }
+    .journal-heading p { margin:12px 0 0; color:var(--muted); font:400 12px/1.65 var(--sans); letter-spacing:.015em; }
+    .journal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+    .journal-card { min-width:0; }
+    .journal-card__image-link { display:block; aspect-ratio:1.35 / 1; overflow:hidden; background:#e5e2db; }
+    .journal-card__image { display:block; width:100%; height:100%; object-fit:cover; transition:transform .45s cubic-bezier(.2,.65,.25,1); }
+    .journal-card:hover .journal-card__image,.journal-card:focus-within .journal-card__image { transform:scale(1.03); }
+    .journal-card__copy { padding-top:16px; }
+    .journal-category { margin:0 0 9px; color:#77756d; font:500 8px/1.4 var(--sans); letter-spacing:.2em; text-transform:uppercase; }
+    .journal-card h3 { min-height:2.25em; margin:0 0 13px; color:var(--ink); font:500 clamp(22px,2.35vw,30px)/1.05 var(--serif); }
+    .journal-card__description { min-height:3.4em; margin:0 0 15px; color:#77756d; font:400 10px/1.7 var(--sans); }
+    .journal-read { position:relative; display:inline-flex; align-items:center; gap:10px; padding-bottom:5px; color:#4f4d46; font:500 8px/1.3 var(--sans); letter-spacing:.14em; text-transform:uppercase; transition:opacity .2s; }
+    .journal-read::after { content:""; position:absolute; right:0; bottom:0; left:0; height:1px; background:#aaa79e; transform:scaleX(.3); transform-origin:left; transition:transform .4s cubic-bezier(.2,.65,.25,1); }
+    .journal-read span { font-size:13px; transition:transform .2s; }
+    .journal-read:hover,.journal-read:focus-visible { opacity:.72; }
+    .journal-read:hover::after,.journal-read:focus-visible::after { transform:scaleX(1); }
+    .journal-read:hover span { transform:translateX(3px); }
+    .brand-newsletter { padding:82px 8.2% 78px; background:#eeece6; }
+    .brand-newsletter__inner { display:grid; grid-template-columns:minmax(0,1fr) minmax(340px,.9fr); align-items:center; gap:clamp(36px,7vw,108px); max-width:1280px; margin:0 auto; }
+    .brand-newsletter h2 { max-width:610px; margin:0; color:var(--ink); font:500 clamp(42px,5.2vw,68px)/.95 var(--serif); text-transform:uppercase; }
+    .brand-newsletter__intro p { max-width:445px; margin:17px 0 0; color:#706e65; font:400 12px/1.8 var(--sans); }
+    .brand-newsletter__form-wrap { min-width:0; }
+    .brand-newsletter .email-form { display:flex; gap:10px; max-width:none; margin:0; border:0; }
+    .brand-newsletter .email-form input { min-height:46px; padding:0 14px; border:1px solid #c8c5bc; border-radius:2px; background:rgba(255,255,255,.26); color:var(--ink); font:400 10px var(--sans); letter-spacing:.1em; }
+    .brand-newsletter .email-form input:focus-visible,.brand-newsletter .email-form button:focus-visible { outline:1px solid var(--ink); outline-offset:4px; }
+    .brand-newsletter .email-form input::placeholder { color:#77756d; opacity:1; }
+    .brand-newsletter .email-form button { min-height:46px; padding:0 17px; border:1px solid #24231f; border-radius:2px; background:transparent; color:var(--ink); font:500 8px var(--sans); letter-spacing:.14em; white-space:nowrap; cursor:pointer; transition:background .25s,color .25s; }
+    .brand-newsletter .email-form button:hover { background:#24231f; color:#f5f3ee; }
+    .brand-newsletter__privacy { margin:13px 0 0; color:#858279; font:400 9px/1.6 var(--sans); }
+    .form-message { min-height:18px; margin:11px 0 0; color:#555c3e; font:400 10px/1.5 var(--sans); }
+    .brand-statement { padding:91px 22px 94px; text-align:center; background:#f5f3ee; }
+    .brand-statement__inner { max-width:1050px; margin:0 auto; }
+    .brand-statement h2 { display:flex; flex-wrap:wrap; justify-content:center; gap:0 .22em; margin:0; color:#24231f; font:500 clamp(52px,7vw,92px)/.86 var(--serif); letter-spacing:.012em; }
+    .brand-statement__support { margin:24px 0 0; color:#77756d; font:400 11px/1.7 var(--sans); letter-spacing:.04em; }
+    .brand-statement.statement-reveal-ready .brand-statement__inner { opacity:0; transform:translateY(10px); transition:opacity .55s ease,transform .55s cubic-bezier(.2,.65,.25,1); }
+    .brand-statement.statement-reveal-ready.is-visible .brand-statement__inner { opacity:1; transform:translateY(0); }
+    .site-footer { padding:66px 8.2% 24px; background:#24231f; color:#f5f3ee; }
+    .footer-top { display:grid; grid-template-columns:minmax(180px,1.35fr) minmax(0,4fr); gap:clamp(38px,6vw,92px); padding-bottom:57px; }
+    .footer-brand { max-width:250px; }
+    .footer-brand__wordmark { display:inline-block; color:#f5f3ee; font:500 35px/1 var(--sans); letter-spacing:.19em; }
+    .footer-brand p { max-width:220px; margin:18px 0 0; color:#bab7ae; font:400 11px/1.8 var(--sans); }
+    .footer-nav { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:22px; }
+    .footer-group { min-width:0; border-top:1px solid #484740; padding-top:15px; }
+    .footer-group summary { display:flex; align-items:center; justify-content:space-between; gap:8px; list-style:none; cursor:pointer; color:#f5f3ee; font:500 8px/1.4 var(--sans); letter-spacing:.17em; text-transform:uppercase; }
+    .footer-group summary::-webkit-details-marker { display:none; }
+    .footer-group summary::after { content:"+"; color:#aaa79e; font:400 13px/1 var(--sans); }
+    .footer-group[open] summary::after { content:"−"; }
+    .footer-group summary:focus-visible { outline:1px solid #f5f3ee; outline-offset:5px; }
+    .footer-links { display:grid; justify-items:start; gap:12px; padding-top:20px; }
+    .footer-links a,.footer-social a { color:#c5c2b9; font:400 9px/1.5 var(--sans); transition:color .2s,opacity .2s; }
+    .footer-links a:hover,.footer-social a:hover { color:#fff; }
+    .footer-bottom { display:flex; align-items:center; justify-content:space-between; gap:22px; padding-top:18px; border-top:1px solid #484740; color:#aaa79e; font:400 8px/1.5 var(--sans); letter-spacing:.055em; }
+    .footer-social { display:flex; flex-wrap:wrap; align-items:center; gap:22px; }
+    .mobile-menu { display:none; }
+    .overlay { position:fixed; inset:0; background:rgba(22,22,19,.34); opacity:0; visibility:hidden; z-index:10; transition:all .24s; }
+    .overlay.open { opacity:1; visibility:visible; }
+    .cart-drawer { position:fixed; z-index:11; top:0; right:0; height:100%; width:min(420px,100%); background:var(--paper); transform:translateX(100%); transition:transform .32s cubic-bezier(.2,.75,.3,1); display:flex; flex-direction:column; }
+    .cart-drawer.open { transform:translateX(0); }
+    .drawer-head { height:70px; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; padding:0 25px; }
+    .drawer-head h2 { font:500 24px var(--sans); margin:0; }
+    .drawer-items { padding:10px 25px; flex:1; overflow:auto; }
+    .cart-empty { text-align:center; color:var(--muted); padding:70px 10px; font-size:12px; }
+    .cart-row { display:grid; grid-template-columns:78px 1fr auto; gap:14px; padding:17px 0; border-bottom:1px solid var(--line); align-items:start; }
+    .cart-row img { width:78px; height:92px; object-fit:cover; background:var(--card); }
+    .cart-row h3 { font:500 16px var(--sans); margin:3px 0 6px; }
+    .cart-row p { margin:0; color:var(--muted); font-size:10px; }
+    .quantity { display:flex; align-items:center; gap:11px; margin-top:12px; font-size:11px; }
+    .quantity button { border:0; background:transparent; padding:0; cursor:pointer; color:#6b695f; font-size:15px; }
+    .cart-row-price { font-size:11px; padding-top:4px; }
+    .drawer-bottom { border-top:1px solid var(--line); padding:20px 25px 25px; }
+    .subtotal { display:flex; justify-content:space-between; font-size:12px; margin-bottom:6px; }
+    .subtotal strong { font-weight:500; }
+    .shipping-note { color:var(--muted); font-size:10px; margin:0 0 17px; }
+    .drawer-bottom .button { width:100%; }
+    .toast { position:fixed; z-index:15; left:50%; bottom:26px; background:#2c2c27; color:white; padding:13px 19px; font-size:10px; letter-spacing:.04em; transform:translate(-50%,20px); opacity:0; pointer-events:none; transition:all .25s; box-shadow:0 8px 24px #24231f28; }
+    .toast.show { opacity:1; transform:translate(-50%,0); }
+    .search-panel { position:absolute; z-index:7; top:100%; left:0; right:0; padding:19px 8%; background:var(--paper); border-bottom:1px solid var(--line); display:none; }
+    .search-panel.open { display:block; }
+    .search-panel input { width:100%; border:0; outline:0; background:transparent; font:500 16px var(--sans); padding:8px 0; }
+    @media (max-width: 900px) {
+      .header-main { height:70px; grid-template-columns:1fr auto; gap:0; padding:0 24px; }
+      .header-left { grid-column:1; gap:13px; }
+      .header-actions { grid-column:2; gap:18px; }
+      .mobile-menu { display:inline-flex; }
+      .nav { display:none; position:absolute; top:70px; left:0; right:0; z-index:8; padding:22px 24px 24px; background:var(--paper); border-bottom:1px solid var(--line); flex-direction:column; align-items:flex-start; gap:19px; }
+      .nav.mobile-open { display:flex; }
+      .header-utility { font-size:8px; gap:5px; }
+      .header-utility svg { width:16px; height:16px; }
+      .section { padding-left:5%; padding-right:5%; }
+      .fashion-category-section { padding:64px 5% 70px; }
+      .fashion-category-heading { margin-bottom:25px; }
+      .fashion-category-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:none; grid-auto-rows:clamp(280px,38vw,340px); gap:16px; }
+      .fashion-category-card--clothing,
+      .fashion-category-card--footwear,
+      .fashion-category-card--watches,
+      .fashion-category-card--headwear { grid-column:span 1; grid-row:auto; }
+      .fashion-category-card--accessories { grid-column:1 / -1; grid-row:auto; }
+      .product-grid { grid-template-columns:repeat(2,1fr); gap:25px 12px; }
+      .latest-product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 14px; }
+      .category-grid { grid-template-columns:repeat(2,1fr); }
+      .category-card { height:210px; }
+      .story-copy { padding:45px 9%; }
+      .featured-collection { height:clamp(540px,68vw,660px); }
+      .featured-collection__copy { margin-left:5vw; width:min(390px,43vw); }
+      .watch-editorial { grid-template-columns:minmax(290px,.9fr) minmax(0,1.1fr); min-height:520px; }
+      .watch-editorial__copy { padding:58px 7vw; }
+      .watch-editorial__media { min-height:520px; }
+      .footwear-editorial { grid-template-columns:minmax(0,1.1fr) minmax(310px,.9fr); min-height:480px; }
+      .footwear-editorial__media { min-height:480px; }
+      .footwear-editorial__copy { padding:56px 5vw; }
+      .brand-story-editorial { gap:6vw; padding:84px 6%; }
+      .brand-story-editorial__media { height:520px; min-height:0; }
+      .journal-section { padding:78px 5% 84px; }
+      .journal-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 18px; }
+      .brand-newsletter { padding:70px 6% 66px; }
+      .brand-newsletter__inner { grid-template-columns:minmax(0,1fr) minmax(300px,.9fr); gap:34px; }
+      .site-footer { padding:55px 6% 22px; }
+      .footer-top { grid-template-columns:1fr; gap:34px; padding-bottom:38px; }
+      .footer-brand { max-width:none; }
+      .footer-brand p { max-width:300px; }
+      .footer-nav { grid-template-columns:repeat(3,minmax(0,1fr)); row-gap:24px; }
+    }
+    @media (max-width: 600px) {
+      .header-main { height:64px; grid-template-columns:1fr auto; padding:0 15px; }
+      .header-left { gap:10px; }
+      .header-actions { gap:13px; }
+      .header-wordmark { font-size:18px; letter-spacing:.22em; }
+      .header-utility { font-size:7px; letter-spacing:.09em; gap:0; padding:6px 0; }
+      .header-utility svg { display:none; }
+      .icon-btn svg { width:18px; height:18px; }
+      .nav { top:64px; }
+      .hero { height:auto; min-height:0; max-height:none; margin:0; display:flex; flex-direction:column; align-items:stretch; overflow:visible; }
+      .hero-image { position:relative; inset:auto; display:block; width:100%; height:auto; aspect-ratio:1 / 1.02; object-position:75% center; }
+      .hero-copy { margin:0; padding:31px 24px 43px; max-width:none; background:var(--paper); }
+      .hero h1 { font-size:clamp(55px,14vw,76px); margin:0 0 18px; }
+      .hero-copy p { font-size:12px; max-width:290px; margin-bottom:24px; }
+      .fashion-category-section { padding:54px 19px 58px; }
+      .fashion-category-heading { margin-bottom:23px; }
+      .fashion-category-heading h2 { font-size:36px; }
+      .fashion-category-heading p { margin-top:8px; font-size:11px; }
+      .fashion-category-grid { grid-template-columns:1fr; grid-auto-rows:clamp(270px,84vw,370px); gap:18px; }
+      .fashion-category-card--clothing,
+      .fashion-category-card--footwear,
+      .fashion-category-card--watches,
+      .fashion-category-card--headwear,
+      .fashion-category-card--accessories { grid-column:1 / -1; grid-row:auto; }
+      .fashion-category-caption { min-height:52px; padding-top:12px; }
+      .fashion-category-caption h3 { font-size:10px; }
+      .benefits { margin:0; grid-template-columns:1fr; padding:7px 20px; }
+      .benefit { padding:13px 0; text-align:left; border:0!important; font-size:9px; }
+      .benefit + .benefit { border-top:1px solid var(--line)!important; }
+      .benefit span { margin-left:6px; }
+      .section { padding:54px 19px; }
+      .section-title { font-size:30px; }
+      .section-heading { margin-bottom:22px; }
+      .section-heading .text-link { font-size:8px; }
+      .category-grid { gap:10px; }
+      .category-card { height:162px; }
+      .category-card span { font-size:19px; left:12px; bottom:12px; }
+      .collection { padding-top:55px; padding-bottom:58px; }
+      .collection .section-heading { align-items:flex-end; }
+      .filters { overflow:auto; flex-wrap:nowrap; margin-right:-19px; padding-right:19px; scrollbar-width:none; }
+      .filters::-webkit-scrollbar { display:none; }
+      .filter-chip { white-space:nowrap; padding:9px 13px; }
+      .catalog-toolbar { align-items:flex-start; flex-direction:column; gap:8px; margin-bottom:14px; }
+      .catalog-tools { width:100%; justify-content:space-between; }
+      .product-name { font-size:15px; }
+      .latest-edit { padding-top:56px; padding-bottom:62px; }
+      .latest-edit .latest-heading { margin-bottom:24px; }
+      .latest-heading .section-title { font-size:36px; }
+      .latest-support { margin-top:8px; font-size:11px; }
+      .latest-product-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 11px; }
+      .latest-product-info { padding-top:10px; }
+      .latest-product-name { min-height:28px; font-size:9px; letter-spacing:.08em; }
+      .latest-product-category { font-size:9px; }
+      .latest-product-purchase { gap:5px; margin-top:9px; }
+      .latest-product-price { font-size:10px; }
+      .latest-add { font-size:7px; letter-spacing:.09em; }
+      .product-image { aspect-ratio:.79; }
+      .product-tag { top:8px; left:8px; font-size:7px; padding:5px 7px; }
+      .heart { top:7px; right:7px; width:29px; height:29px; }
+      .quick-add { transform:none; opacity:1; height:34px; left:6px; right:6px; bottom:6px; font-size:8px; background:rgba(245,243,238,.93); }
+      .product-meta { padding-top:10px; }
+      .product-sub { font-size:9px; }
+      .rating { font-size:8px; }
+      .story { grid-template-columns:1fr; }
+      .story-image { min-height:300px; height:300px; }
+      .story-copy { padding:43px 25px 48px; }
+      .story-copy h2 { font-size:34px; }
+      .journal-section { padding:57px 19px 63px; }
+      .journal-heading { display:block; margin-bottom:23px; }
+      .journal-heading h2 { font-size:40px; }
+      .journal-heading p { margin-top:9px; font-size:11px; }
+      .journal-grid { grid-template-columns:1fr; gap:30px; }
+      .journal-card:last-child { grid-column:auto; max-width:none; }
+      .journal-card__image-link { aspect-ratio:1.25 / 1; }
+      .journal-card__copy { padding-top:13px; }
+      .journal-card h3 { min-height:0; font-size:27px; }
+      .brand-newsletter { padding:58px 21px 55px; }
+      .brand-newsletter__inner { grid-template-columns:1fr; gap:27px; }
+      .brand-newsletter h2 { font-size:clamp(40px,10vw,54px); }
+      .brand-newsletter__intro p { margin-top:12px; font-size:11px; }
+      .brand-newsletter .email-form { flex-direction:column; align-items:stretch; gap:12px; }
+      .brand-newsletter .email-form input { width:100%; min-height:44px; font-size:9px; }
+      .brand-newsletter .email-form button { align-self:stretch; min-height:44px; }
+      .brand-newsletter__privacy { font-size:8px; }
+      .brand-statement { padding:65px 18px 68px; }
+      .brand-statement h2 { display:block; font-size:clamp(57px,13vw,79px); line-height:.84; }
+      .brand-statement h2 span { display:block; }
+      .brand-statement__support { max-width:260px; margin:18px auto 0; font-size:10px; }
+      .site-footer { padding:40px 21px 20px; }
+      .footer-top { gap:29px; padding-bottom:32px; }
+      .footer-brand__wordmark { font-size:31px; }
+      .footer-brand p { margin-top:13px; font-size:10px; }
+      .footer-nav { grid-template-columns:1fr; gap:0; }
+      .footer-group { padding:14px 0 0; }
+      .footer-links { gap:11px; padding:16px 0 19px; }
+      .footer-bottom { align-items:flex-start; flex-direction:column; gap:14px; font-size:8px; }
+      .footer-social { gap:18px; }
+      .search-panel { padding:14px 22px; }
+      .search-panel input { font-size:20px; }
+    }
+    @media (max-width: 760px) {
+      .hero { height:auto; min-height:0; max-height:none; margin:0; display:flex; flex-direction:column; align-items:stretch; overflow:visible; }
+      .hero-image { position:relative; inset:auto; display:block; width:100%; height:auto; aspect-ratio:1 / 1.02; object-position:75% center; }
+      .hero-copy { margin:0; padding:31px 24px 43px; max-width:none; background:var(--paper); }
+      .hero h1 { font-size:clamp(55px,14vw,76px); margin:0 0 18px; }
+      .hero-copy p { font-size:12px; max-width:290px; margin-bottom:24px; }
+      .featured-collection { height:auto; min-height:0; display:flex; flex-direction:column; align-items:stretch; overflow:hidden; }
+      .featured-collection__copy { order:1; width:auto; max-width:none; margin:0; padding:53px 22px 34px; background:#e7e3dc; }
+      .featured-collection .campaign-title { font-size:clamp(58px,13vw,84px); }
+      .featured-collection .campaign-description { margin:17px 0 22px; }
+      .featured-collection__media { order:2; position:relative; inset:auto; height:clamp(330px,92vw,520px); }
+      .featured-collection__image { object-position:64% center; }
+      .watch-editorial { grid-template-columns:1fr; min-height:0; }
+      .watch-editorial__copy { padding:58px 22px 35px; }
+      .watch-editorial__media { min-height:0; height:auto; aspect-ratio:1.18 / 1; }
+      .watch-editorial__image { object-position:58% center; }
+      .footwear-editorial { display:flex; flex-direction:column; min-height:0; }
+      .footwear-editorial__copy { order:1; padding:57px 22px 34px; }
+      .footwear-editorial__media { order:2; min-height:0; height:auto; aspect-ratio:3 / 2; }
+      .brand-story-editorial { grid-template-columns:1fr; gap:29px; padding:67px 22px 71px; }
+      .brand-story-editorial__copy { max-width:460px; }
+      .brand-story-editorial .campaign-title { font-size:clamp(49px,11vw,68px); }
+      .brand-story-editorial__media { height:auto; min-height:0; aspect-ratio:4 / 5; }
+    }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-main">
+      <div class="header-left">
+        <button class="icon-btn mobile-menu" id="menuToggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+        <a class="wordmark header-wordmark" href="#top" aria-label="STILL home">STILL</a>
+      </div>
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#shop">New in</a><a href="#shop">Clothing</a><a href="#shop">Footwear</a><a href="#shop">Watches</a><a href="#shop">Headwear</a><a href="#shop">Accessories</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn header-utility" id="searchToggle" aria-label="Search"><span>Search</span></button>
+        <button class="icon-btn header-utility account-action" aria-label="Account"><span>Account</span></button>
+        <button class="icon-btn header-utility" id="cartToggle" aria-label="Open bag"><span>Bag</span><span class="cart-count" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <div class="search-panel" id="searchPanel"><input id="searchInput" type="search" placeholder="Search STILL" aria-label="Search products" /></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="The new everyday collection">
+      <img class="hero-image" src="still-fashion-hero.png" alt="Contemporary charcoal outfit in a quiet architectural studio" />
+      <div class="hero-copy">
+        <h1>THE NEW<br/>EVERYDAY.</h1>
+        <p>Contemporary essentials designed for everyday distinction.</p>
+        <a class="hero-cta" href="#shop">Shop collection&nbsp;→</a>
+      </div>
+    </section>
+    <section class="fashion-category-section" aria-labelledby="fashion-category-title">
+      <div class="fashion-category-heading">
+        <div>
+          <h2 id="fashion-category-title">SHOP BY CATEGORY</h2>
+          <p>Essential pieces. Distinctive details.</p>
+        </div>
+      </div>
+      <div class="fashion-category-grid">
+        <a class="fashion-category-card fashion-category-card--clothing" href="#shop" aria-label="Explore clothing">
+          <div class="fashion-category-media"><img src="still-category-clothing.png" alt="Contemporary charcoal tailoring in a pale architectural studio" loading="lazy" /></div>
+          <div class="fashion-category-caption"><h3>CLOTHING</h3><span>Explore <b aria-hidden="true">→</b></span></div>
+        </a>
+        <a class="fashion-category-card fashion-category-card--footwear" href="#shop" aria-label="Explore footwear">
+          <div class="fashion-category-media"><img src="still-category-footwear.png" alt="Unbranded charcoal leather shoes on limestone" loading="lazy" /></div>
+          <div class="fashion-category-caption"><h3>FOOTWEAR</h3><span>Explore <b aria-hidden="true">→</b></span></div>
+        </a>
+        <a class="fashion-category-card fashion-category-card--watches" href="#shop" aria-label="Explore watches">
+          <div class="fashion-category-media"><img src="still-category-watches.png" alt="Minimal charcoal wristwatch against dark stone" loading="lazy" /></div>
+          <div class="fashion-category-caption"><h3>WATCHES</h3><span>Explore <b aria-hidden="true">→</b></span></div>
+        </a>
+        <a class="fashion-category-card fashion-category-card--headwear" href="#shop" aria-label="Explore headwear">
+          <div class="fashion-category-media"><img src="still-category-headwear.png" alt="Structured charcoal cap on a stone surface" loading="lazy" /></div>
+          <div class="fashion-category-caption"><h3>HEADWEAR</h3><span>Explore <b aria-hidden="true">→</b></span></div>
+        </a>
+        <a class="fashion-category-card fashion-category-card--accessories" href="#shop" aria-label="Explore accessories">
+          <div class="fashion-category-media"><img src="still-category-accessories.png" alt="Leather wallet, belt and sunglasses arranged on limestone" loading="lazy" /></div>
+          <div class="fashion-category-caption"><h3>ACCESSORIES</h3><span>Explore <b aria-hidden="true">→</b></span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section collection latest-edit" id="shop" aria-labelledby="collection-title">
+      <div class="section-heading latest-heading"><div><h2 class="section-title" id="collection-title">The Latest Edit</h2><p class="latest-support">A considered selection of our newest essentials.</p></div></div>
+      <div class="product-grid latest-product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="featured-collection" id="featured-collection" aria-labelledby="featured-title">
+      <div class="featured-collection__media"><img class="featured-collection__image" src="still-featured-aw26.png" alt="Model in refined charcoal and cream tailoring in a pale limestone architectural space" loading="lazy" /></div>
+      <div class="featured-collection__copy"><p class="campaign-eyebrow">AW26 Collection</p><h2 class="campaign-title" id="featured-title">The First<br />Edit</h2><p class="campaign-description">A study in form, texture and movement.</p><a class="campaign-cta" href="#shop">Discover the collection <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="watch-editorial" id="timepieces" aria-labelledby="timepieces-title">
+      <div class="watch-editorial__copy"><p class="campaign-eyebrow">Timepieces</p><h2 class="campaign-title" id="timepieces-title">Time, Refined.</h2><p class="campaign-description">Precision, proportion and restraint.</p><a class="campaign-cta" href="#shop">Explore watches <span aria-hidden="true">→</span></a></div>
+      <div class="watch-editorial__media"><img class="watch-editorial__image" src="still-editorial-timepieces.png" alt="Unbranded automatic watch with a detailed dark dial and leather strap on charcoal stone" loading="lazy" /></div>
+    </section>
+
+    <section class="footwear-editorial" id="footwear" aria-labelledby="footwear-title">
+      <div class="footwear-editorial__media"><img class="footwear-editorial__image" src="still-editorial-footwear.png" alt="Cream and stone suede sneakers on pale limestone in an architectural studio" loading="lazy" /></div>
+      <div class="footwear-editorial__copy"><p class="campaign-eyebrow">Footwear</p><h2 class="campaign-title" id="footwear-title">Built to Move.</h2><p class="campaign-description">Designed around movement. Refined for everyday life.</p><a class="campaign-cta" href="#shop">Explore footwear <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="brand-story-editorial" id="story" aria-labelledby="brand-story-title">
+      <div class="brand-story-editorial__copy"><p class="campaign-eyebrow">Our Philosophy</p><h2 class="campaign-title" id="brand-story-title"><span>More Than</span><span>What You Wear.</span></h2><div class="campaign-description"><p>We create contemporary essentials shaped by simplicity, craftsmanship and intention.</p><p>Every piece is designed to become part of your everyday — considered in form, refined in detail and made to endure.</p></div><a class="campaign-cta" href="#story">Our Story <span aria-hidden="true">→</span></a></div>
+      <div class="brand-story-editorial__media"><img class="brand-story-editorial__image" src="still-brand-story.png" alt="Model in refined cream knitwear and charcoal tailoring in a limestone corridor" loading="lazy" /></div>
+    </section>
+
+    <section class="journal-section" id="journal" aria-labelledby="journal-title">
+      <div class="journal-heading"><div><h2 id="journal-title">The Journal</h2><p>Ideas, objects and perspectives from the world of STILL.</p></div></div>
+      <div class="journal-grid">
+        <article class="journal-card">
+          <a class="journal-card__image-link" href="#journal" aria-label="Read Building a Timeless Wardrobe"><img class="journal-card__image" src="still-journal-style.png" alt="Charcoal tailoring and a cream knit arranged in a limestone wardrobe setting" loading="lazy" /></a>
+          <div class="journal-card__copy"><p class="journal-category">Style</p><h3>Building a Timeless Wardrobe</h3><p class="journal-card__description">A considered approach to the pieces that stay relevant beyond a season.</p><a class="journal-read" href="#journal">Read article <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="journal-card">
+          <a class="journal-card__image-link" href="#journal" aria-label="Read The Details That Matter"><img class="journal-card__image" src="still-journal-craft.png" alt="Hands stitching a charcoal wool cuff with a dark horn button" loading="lazy" /></a>
+          <div class="journal-card__copy"><p class="journal-category">Craft</p><h3>The Details That Matter</h3><p class="journal-card__description">Exploring materials, construction and the small decisions behind a piece.</p><a class="journal-read" href="#journal">Read article <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="journal-card">
+          <a class="journal-card__image-link" href="#journal" aria-label="Read Designed for Everyday"><img class="journal-card__image" src="still-journal-design.png" alt="Cream coat and leather shoes arranged in a calm stone interior" loading="lazy" /></a>
+          <div class="journal-card__copy"><p class="journal-category">Design</p><h3>Designed for Everyday</h3><p class="journal-card__description">Why useful objects can still feel considered.</p><a class="journal-read" href="#journal">Read article <span aria-hidden="true">→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="brand-newsletter__inner">
+        <div class="brand-newsletter__intro"><h2 id="newsletter-title">Stay in the World of STILL.</h2><p>Be the first to discover new collections, considered pieces and stories from the brand.</p></div>
+        <div class="brand-newsletter__form-wrap"><form class="email-form" id="newsletterForm"><input type="email" id="emailInput" name="email" placeholder="EMAIL ADDRESS" autocomplete="email" required aria-label="Email address" aria-describedby="newsletter-privacy formMessage"/><button type="submit">Subscribe&nbsp; →</button></form><p class="brand-newsletter__privacy" id="newsletter-privacy">By subscribing, you agree to receive occasional updates from STILL.</p><p class="form-message" id="formMessage" role="status" aria-live="polite"></p></div>
+      </div>
+    </section>
+
+    <section class="brand-statement" id="brand-statement" aria-labelledby="brand-statement-title">
+      <div class="brand-statement__inner"><h2 id="brand-statement-title"><span>FORM.</span><span>FUNCTION.</span><span>IDENTITY.</span></h2><p class="brand-statement__support">Contemporary essentials for a considered everyday.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="footer-brand__wordmark" href="#top" aria-label="STILL home">STILL</a><p>Contemporary essentials for the modern individual.</p></div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <details class="footer-group" open><summary>Shop</summary><div class="footer-links"><a href="#shop">New In</a><a href="#shop">Clothing</a><a href="#footwear">Footwear</a><a href="#timepieces">Watches</a><a href="#shop">Headwear</a><a href="#shop">Accessories</a></div></details>
+        <details class="footer-group" open><summary>About</summary><div class="footer-links"><a href="#story">Our Story</a><a href="#journal">Journal</a><a href="brand-information.html#contact">Contact</a></div></details>
+        <details class="footer-group" open><summary>Customer Care</summary><div class="footer-links"><a href="brand-information.html#shipping">Shipping</a><a href="brand-information.html#returns">Returns</a><a href="brand-information.html#size-guide">Size Guide</a><a href="brand-information.html#faq">FAQ</a></div></details>
+        <details class="footer-group" open><summary>Legal</summary><div class="footer-links"><a href="brand-information.html#privacy">Privacy</a><a href="brand-information.html#terms">Terms</a><a href="brand-information.html#cookies">Cookies</a></div></details>
+        <details class="footer-group" open><summary>Social</summary><div class="footer-links"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a><a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest</a><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a></div></details>
+      </nav>
+    </div>
+    <div class="footer-bottom"><span>© 2026 STILL. All rights reserved.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="drawer-head"><h2>Your bag <span id="drawerItemCount" style="font:11px var(--sans);color:#858279"></span></h2><button class="icon-btn" id="closeCart" aria-label="Close shopping bag"><svg viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="drawer-items" id="drawerItems"></div>
+    <div class="drawer-bottom"><div class="subtotal"><span>Subtotal</span><strong id="subtotal">₹0</strong></div><p class="shipping-note">Your bag is saved on this device. Merchant checkout is not connected yet.</p><button class="button" id="checkoutButton">Checkout preview <svg viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></svg></button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+    const products = [
+      { id: 101, name: "Essential Overshirt", categoryName: "Clothing", price: 4990, stock: 99, image: "still-product-overshirt.png", alt: "Charcoal cotton twill overshirt on a warm stone studio background" },
+      { id: 102, name: "Atelier Runner", categoryName: "Footwear", price: 7490, stock: 99, image: "still-product-runner.png", alt: "Minimal cream and charcoal running shoes photographed in studio" },
+      { id: 103, name: "Automatic 01", categoryName: "Watches", price: 18990, stock: 99, image: "still-product-watch.png", alt: "Unbranded charcoal automatic wristwatch on dark stone" },
+      { id: 104, name: "Signature Cap", categoryName: "Headwear", price: 2490, stock: 99, image: "still-product-cap.png", alt: "Structured charcoal wool cap on a pale stone surface" }
+    ];
+    let query = "";
+    const savedCart = readStorage("still-cart-v1", []);
+    const productById = new Map(products.map((product) => [product.id, product]));
+    let cart = new Map((Array.isArray(savedCart) ? savedCart : []).filter((entry) => Array.isArray(entry) && productById.has(Number(entry[0])) && Number(entry[1]?.qty) > 0).map(([id, row]) => [Number(id), { product: productById.get(Number(id)), qty: Math.min(99, Number(row.qty)) }]));
+    const savedFavorites = readStorage("still-favorites-v1", []);
+    const favorites = new Set((Array.isArray(savedFavorites) ? savedFavorites : []).map(Number));
+    const fmt = (n) => "₹" + Math.round(n).toLocaleString("en-IN");
+    const productGrid = document.getElementById("productGrid");
+    const toast = document.getElementById("toast");
+    let toastTimer;
+
+    function readStorage(key, fallback) {
+      try { const value = JSON.parse(localStorage.getItem(key)); return value ?? fallback; }
+      catch { return fallback; }
+    }
+    function escapeHTML(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+    }
+    function renderProducts() {
+      const needle = query.trim().toLowerCase();
+      const visible = products.filter((p) => (p.name + " " + p.categoryName).toLowerCase().includes(needle));
+      productGrid.innerHTML = visible.map((p) => {
+        const name = escapeHTML(p.name);
+        const photo = escapeHTML(p.image);
+        return `<article class="product-card latest-product-card">
+          <div class="product-image latest-product-image"><img src="${photo}" alt="${escapeHTML(p.alt)}" loading="lazy"/></div>
+          <div class="latest-product-info"><span class="latest-product-name">${name}</span><span class="latest-product-category">${escapeHTML(p.categoryName)}</span><div class="latest-product-purchase"><span class="latest-product-price">${fmt(p.price)}</span><button class="latest-add" data-add="${p.id}">ADD TO BAG&nbsp; +</button></div></div>
+        </article>`;
+      }).join("");
+      if (!visible.length) productGrid.innerHTML = `<div class="latest-empty">No pieces found. Try a different search.</div>`;
+    }
+    function showToast(message) {
+      toast.textContent = message; toast.classList.add("show"); clearTimeout(toastTimer); toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+    }
+    function addToCart(id) {
+      const p = products.find((item) => item.id === id);
+      if (!p || p.stock <= 0) { showToast("This piece is currently unavailable"); return; }
+      const row = cart.get(id) || { product: p, qty: 0 };
+      if (row.qty >= p.stock) { showToast(`Only ${p.stock} available in this catalog`); return; }
+      row.product = p; row.qty += 1; cart.set(id, row); updateCart(); showToast(`${p.name} added to your bag`);
+    }
+    function updateCart() {
+      const count = [...cart.values()].reduce((sum, row) => sum + row.qty, 0);
+      const total = [...cart.values()].reduce((sum, row) => sum + row.product.price * row.qty, 0);
+      document.getElementById("cartCount").textContent = count;
+      document.getElementById("drawerItemCount").textContent = count ? `(${count})` : "";
+      document.getElementById("subtotal").textContent = fmt(total);
+      try { localStorage.setItem("still-cart-v1", JSON.stringify([...cart.entries()])); } catch {}
+      const items = [...cart.values()];
+      document.getElementById("drawerItems").innerHTML = items.length ? items.map(({product:p,qty}) => `<div class="cart-row"><img src="${escapeHTML(p.image)}" alt=""/><div><h3>${escapeHTML(p.name)}</h3><p>${escapeHTML(p.categoryName || p.category)}</p><div class="quantity"><button data-qty="${p.id}" data-change="-1" aria-label="Remove one ${escapeHTML(p.name)}">−</button><span>${qty}</span><button data-qty="${p.id}" data-change="1" aria-label="Add one ${escapeHTML(p.name)}">+</button></div></div><span class="cart-row-price">${fmt(p.price * qty)}</span></div>`).join("") : `<div class="cart-empty">Your bag is taking a little breather.<br/><br/><a href="#shop" class="text-link" id="keepShopping">Find something lovely&nbsp; ↗</a></div>`;
+    }
+    function toggleCart(open) {
+      const drawer = document.getElementById("cartDrawer");
+      drawer.classList.toggle("open", open); drawer.setAttribute("aria-hidden", String(!open));
+      document.getElementById("overlay").classList.toggle("open", open);
+      document.body.style.overflow = open ? "hidden" : "";
+      if (open) document.getElementById("closeCart").focus();
+    }
+    updateCart();
+    renderProducts();
+    const featuredImage = document.querySelector(".featured-collection__image");
+    if (featuredImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      let parallaxFrame = 0;
+      const updateFeaturedParallax = () => {
+        if (parallaxFrame) return;
+        parallaxFrame = requestAnimationFrame(() => {
+          parallaxFrame = 0;
+          const bounds = featuredImage.closest(".featured-collection").getBoundingClientRect();
+          if (bounds.bottom < 0 || bounds.top > window.innerHeight) return;
+          const progress = (window.innerHeight - bounds.top) / (window.innerHeight + bounds.height);
+          const offset = (progress - .5) * 20;
+          featuredImage.style.transform = `scale(1.055) translateY(${offset.toFixed(1)}px)`;
+        });
+      };
+      window.addEventListener("scroll", updateFeaturedParallax, { passive: true });
+      window.addEventListener("resize", updateFeaturedParallax);
+      updateFeaturedParallax();
+    }
+    productGrid.addEventListener("click", (event) => {
+      const add = event.target.closest("[data-add]");
+      if (add) addToCart(Number(add.dataset.add));
+    });
+    document.getElementById("cartToggle").addEventListener("click", () => toggleCart(true));
+    document.getElementById("closeCart").addEventListener("click", () => toggleCart(false));
+    document.getElementById("overlay").addEventListener("click", () => toggleCart(false));
+    document.getElementById("drawerItems").addEventListener("click", (event) => {
+      const control = event.target.closest("[data-qty]");
+      if (control) {
+        const id = Number(control.dataset.qty); const row = cart.get(id); const change = Number(control.dataset.change);
+        if (row && change > 0 && row.qty >= row.product.stock) showToast(`Only ${row.product.stock} available in this catalog`);
+        else if (row) { row.qty += change; if (row.qty <= 0) cart.delete(id); updateCart(); }
+      }
+      if (event.target.closest("#keepShopping")) toggleCart(false);
+    });
+    document.getElementById("checkoutButton").addEventListener("click", () => showToast(cart.size ? "Merchant checkout and payment are not connected yet" : "Your bag is empty for now"));
+    const searchPanel = document.getElementById("searchPanel");
+    document.getElementById("searchToggle").addEventListener("click", () => { searchPanel.classList.toggle("open"); if (searchPanel.classList.contains("open")) document.getElementById("searchInput").focus(); });
+    document.getElementById("searchInput").addEventListener("input", (e) => { query = e.target.value; renderProducts(); });
+    const menuToggle = document.getElementById("menuToggle");
+    menuToggle.addEventListener("click", () => { const nav = document.getElementById("mainNav"); const open = nav.classList.toggle("mobile-open"); menuToggle.setAttribute("aria-expanded", String(open)); menuToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu"); });
+    document.querySelectorAll("#mainNav a").forEach((a) => a.addEventListener("click", () => { document.getElementById("mainNav").classList.remove("mobile-open"); menuToggle.setAttribute("aria-expanded","false"); menuToggle.setAttribute("aria-label","Open menu"); }));
+    document.getElementById("newsletterForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      if (!form.reportValidity()) return;
+      document.getElementById("formMessage").textContent = "Email validated. Subscription delivery is not connected yet, so your address has not been sent.";
+    });
+    const brandStatement = document.querySelector(".brand-statement");
+    if (brandStatement && "IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      brandStatement.classList.add("statement-reveal-ready");
+      const statementObserver = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          brandStatement.classList.add("is-visible");
+          statementObserver.disconnect();
+        }
+      }, { threshold: .22 });
+      statementObserver.observe(brandStatement);
+    }
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") { toggleCart(false); searchPanel.classList.remove("open"); document.getElementById("mainNav").classList.remove("mobile-open"); } });
+  </script>
+</body>
+</html>
